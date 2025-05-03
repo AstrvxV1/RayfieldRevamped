@@ -1609,8 +1609,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	if not Settings.DisableRayfieldPrompts then
 		task.spawn(function()
 			while true do
-				RayfieldLibrary:Notify({
-				})
+				.wait(math.random(180, 600))
 			end
 		end)
 	end
